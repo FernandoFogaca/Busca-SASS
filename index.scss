@@ -1,8 +1,35 @@
 
+@import "./scss/cores";
+@import "./scss/componentes.scss";
+@import "./scss/layout.scss";
+@import "./SCSS/resets.scss";
 
-body {
 
-background-color: bisque;
+.card {
 
+    @include card;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        @include botaoPrincipal;
+    }
+
+    input {
+        @include inputText;
+    }
+}
+
+main {
+    display: flex; 
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 50px;
 
 }
+
