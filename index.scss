@@ -1,12 +1,9 @@
-
 @import "./scss/cores";
 @import "./scss/componentes.scss";
 @import "./scss/layout.scss";
 @import "./SCSS/resets.scss";
 
-
 .card {
-
     @include card;
     display: flex;
     flex-direction: column;
@@ -21,6 +18,10 @@
     input {
         @include inputText;
     }
+
+    .panelResultado {
+        @include panelResultado
+    }
 }
 
 main {
@@ -30,6 +31,4 @@ main {
     justify-content: center;
     height: 100%;
     padding: 50px;
-
 }
-
